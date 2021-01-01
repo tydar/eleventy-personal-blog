@@ -9,7 +9,7 @@ tags:
   - linux
 layout: layouts/post.njk
 ---
-I've been tinkering with a self-hosted Gitlab instance to learn a bit more about their CI/CD tooling and to practice with a vertically integrated set of tools overall. I set up my controller and runner on Debian 10 virtual machines running on an ESXI host. I first leaned toward using the Docker containers available to spin up and deploy Gitlab runners--but the main software project I'm working on is a webapp acting as a front-end for libvirt called [KVM Conjurer](https://github.com/tydar/kvm-conjurer).
+I've been tinkering with a self-hosted Gitlab instance to learn a bit more about their CI/CD tooling and to practice with a vertically integrated set of tools overall. I set up my controller and runner on Debian 10 virtual machines running on an ESXI host. I first leaned toward using Gitlab's provided Docker containers to spin up and deploy Gitlab runners--but the main software project I'm working on is a webapp acting as a front-end for libvirt called [KVM Conjurer](https://github.com/tydar/kvm-conjurer).
 
 It seems to me like more trouble than it is worth to get a containerized libvirt deployment set up--at least for now. Instead I decided to use the shell Gitlab executor. My main concern was reproduceability of working test and eployment machines. So I quickly put together [some Ansible playbooks](https://github.com/tydar/ansible-gitlab-scripts) to take a fresh new Debian 10 install and bring it up to the baseline necessary to build and run KVM Conjurer *and* to host a few minimal VMs locally to enable automated testing as part of the CI pipeline provided and configured in Gitlab.
 
