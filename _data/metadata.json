@@ -1,20 +1,20 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Hi, I'm Tyler",
+  "url": "https://blog.drnll.com/",
+  "description": "Writing from my homelab and software development projects.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Writing from my homelab and software development projects.".,
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://blog.drnll.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://blog.drnll.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
+    "name": "Tyler Darnell",
     "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "url": "https://blog.drnll.com/about-me/"
   }
 }
