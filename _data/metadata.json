@@ -3,7 +3,7 @@
   "url": "https://blog.drnll.com/",
   "description": "Writing from my homelab and software development projects.",
   "feed": {
-    "subtitle": "Writing from my homelab and software development projects.".,
+    "subtitle": "Writing from my homelab and software development projects.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://blog.drnll.com/"
