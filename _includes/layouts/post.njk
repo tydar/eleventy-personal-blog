@@ -6,6 +6,14 @@ templateClass: tmpl-post
 
 {{ content | safe }}
 
+Tags:
+{% for tag in tags %} 
+{% set tagUrl %}/tags/{{ tag }}{% endset %}
+<a class="post-tag" href="{{ tagUrl | url}}">{{ tag }}</a>
+{% else %} 
+untagged 
+{% endfor %}
+
 <hr>
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
