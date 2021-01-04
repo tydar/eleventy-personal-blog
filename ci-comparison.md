@@ -94,3 +94,8 @@ Seems like a popular option now. Haven't looked into it much yet.
 Free cloud tier:
 * 2,500 free credits/week
 * Build on Linux and Windows
+
+
+## Note on self-hosting
+
+Self-hosting of any provider that supports it can be done on the cloud. So for sufficiently resource-friendly builds a free-tier EC2 instance may be useable. Can also likely set up a $5/mo Digital Ocean droplet that can handle it all for small projects.
