@@ -1,5 +1,5 @@
 ---
-title: "Comparison of CI/CD solutions""
+title: "Comparison of CI/CD solutions"
 date: 2021-01-04
 
 permalink: /cicomparison/
