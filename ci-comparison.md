@@ -16,6 +16,8 @@ Comparison of some popular CI/CD services. The services I'll be comparing:
 * Jenkins
 * Azure DevOps
 * AWS CodePipeline
+* TravisCI
+* CircleCI
 
 ## Gitlab
 
@@ -30,6 +32,7 @@ Here are the features available on the free tier:
 * BYO Runners (e.g. run a VM so you don't use online VM minutes)
 * BYO production environment (deploy to any platform)
 * Many integrations with testing suites, deployment platforms, etc.
+* Can run builds in Docker containers.
 
 Confiuration provide in `.yml` files. 
 
@@ -54,6 +57,7 @@ Jenkins is an open-source automation server. Can do much more than CI/CD, but ha
 Jenkins is totally free for a self-hosted solution.
 * Integration with many version control systems and many online version control platforms.
 * Many plugins for different features, build systems, other integrations.
+* Can use Docker containers to run builds and other jobs.
 
 Jenkins is a bit more resource hungry than other products in my brief experience, due to Java.
 
@@ -78,3 +82,15 @@ Free tier:
 * One free Active Pipeline per month.
 * 100 free minutes from CodeBuild per month.
 * CodeDeploy is a free service to deploy to EC2 or Lambda.
+
+## TravisCI
+
+TravisCI's free tier is a trial--you are given 10,000 credits. When you use them up you must start to pay. Has similar features to many other platforms. Integrations with all relevant platforms. I didn't get a clear answer immediately to how many build-minutes 10,000 credits is.
+
+## CircleCI
+
+Seems like a popular option now. Haven't looked into it much yet.
+
+Free cloud tier:
+* 2,500 free credits/week
+* Build on Linux and Windows
