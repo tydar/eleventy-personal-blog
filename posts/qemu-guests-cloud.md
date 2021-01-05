@@ -33,7 +33,7 @@ qemu-img create -f qcow2 -F qcow2 -o backing_file=images/debian10.qcow2 test2.qc
 
 There are two sub-steps here. First, create the configuration files. Second, package them to be read by the virtual CD-ROM drive.
 
-### Substep 1: Create cloud-init.cfg
+### Substep 2.1: Create cloud-init.cfg
 
 You can see the file I created on GitHub [here](https://github.com/tydar/kvm-conjurer/blob/main/tests/cloud-init.cfg). Full cloud-init documentation can be found on readthedocs at [^3].
 
@@ -41,7 +41,7 @@ You can see the file I created on GitHub [here](https://github.com/tydar/kvm-con
 
 I opted to not include a network configuration in my scripts, since I do not need network configuration for my current test suite. You can find more information about configuring networks in the cloud-init documentation [^3] or at Fabian Lee's blog [^2].
 
-### Substep 2: run cloud-localds to produce .img
+### Substep 2.2: run cloud-localds to produce .img
 
 Again, I need 2 cloud-init seed images because I am creating two virtual machines for testing. This tool is provided by the package `cloud-image-utils` (the package name may vary; I am using Debian 10).
 
