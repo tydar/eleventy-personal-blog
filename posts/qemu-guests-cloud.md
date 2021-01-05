@@ -1,7 +1,7 @@
 ---
 title: Creating QEMU guests from cloud images
 description: Use libvirt-powered tools to create QEMU guests from cloud image format with cloud-init configuration
-date: 2021-01-01
+date: 2021-01-05
 tags:
   - cloud-init
   - linux
