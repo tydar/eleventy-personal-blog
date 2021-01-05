@@ -24,8 +24,10 @@ test -f images/debian10.qcow2 || wget -O images/debian10.qcow2 https://cloud.deb
 
 In my current test environment script, I create 2 virtual machines, so I need two of these overlay images.
 
+```
 qemu-img create -f qcow2 -F qcow2 -o backing_file=images/debian10.qcow2 test1.qcow2
 qemu-img create -f qcow2 -F qcow2 -o backing_file=images/debian10.qcow2 test2.qcow2
+```
 
 ## Step 3: Create ISO with cloud-init configuration
 
@@ -41,7 +43,7 @@ I opted to not include a network configuration in my scripts, since I do not nee
 
 ### Substep 2: run cloud-localds to produce .img
 
-Again, I need 2 cloud-init seed images because I am creating two virtual machines for testing. This tool is provided by the package `cloud-image-utils` (the name may vary; I am using Debian 10).
+Again, I need 2 cloud-init seed images because I am creating two virtual machines for testing. This tool is provided by the package `cloud-image-utils` (the package name may vary; I am using Debian 10).
 
 ```
 cloud-localds -v test-seed1.img cloud-init.cfg
