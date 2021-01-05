@@ -33,8 +33,7 @@ There are two sub-steps here. First, create the configuration files. Second, pac
 
 ### Substep 1: Create cloud-init.cfg
 
-You can see the file I created on GitHub here. Full cloud-init documentation can be found on read-the-docs.
-
+You can see the file I created on GitHub [here](https://github.com/tydar/kvm-conjurer/blob/main/tests/cloud-init.cfg). Full cloud-init documentation can be found on readthedocs at [^3].
 
 ### Optional network configuration
 
