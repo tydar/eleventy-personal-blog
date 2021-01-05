@@ -22,7 +22,7 @@ test -f images/debian10.qcow2 || wget -O images/debian10.qcow2 https://cloud.deb
 
 ## Step 2: Create .qcow2 image with base image as backing image
 
-In my current test environment script, I create 2 virtual machines, so I need two of these overlay images.
+In my current test environment script, I create 2 virtual machines, so I need two of these overlay images. Documentation found on the libvirt knowledgebase [^4].
 
 ```
 qemu-img create -f qcow2 -F qcow2 -o backing_file=images/debian10.qcow2 test1.qcow2
