@@ -4,6 +4,7 @@ date: 2021-01-06
 tags:
     - devops
     - nginx
+layout: layouts/post.njk
 ---
 Basic configuration for NGINX as a reverse proxy is very simple. To pass URLs like `http://example.com/service` to that service on a LAN, you just need to add this entry to an appropriate configuration file within a `server` directive listening on the appropriate port. To proxy typical HTTP requests, that would be port 80.
 
