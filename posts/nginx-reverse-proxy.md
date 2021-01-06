@@ -19,6 +19,6 @@ server {
 
 So when a request comes to the proxy server for a URL starting with `/service`, the server running on the machine with IP 192.168.1.55 listening at port 8080 receives the request. To proxy requests for multiple different endpoints, you can add additional `location` directives to your configuration file.
 
-In my home 'production' environment I hav set up NGINX to proxy requests to my local DNS admin panel, to proxy requests to my CheckMK instance, and to my personal wiki for managing configuration and how-to notes.
+In my home 'production' environment I use NGINX to proxy requests to my local DNS admin panel, to my CheckMK instance, and to my personal wiki for managing configuration and how-to notes.
 
 More details from NGINX documentation here: [NGINX Reverse Proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/).
