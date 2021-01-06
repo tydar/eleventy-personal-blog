@@ -1,5 +1,5 @@
 ---
-title: "TIL: set up push mirroring from Gitlab to GitHub"
+title: "TIL: set up push mirroring from GitLab to GitHub"
 description: GitLab repositories offer free push mirroring to GitHub
 date: 2021-01-06
 tags:
@@ -8,7 +8,7 @@ tags:
 
 layout: layouts/post.njk
 ---
-The Gitlab free tier only allows free mirroring *to* GitHub, not pulls from GitHub. That requires the first paid tier. To set up your push mirroring follow these steps:
+The GitLab free tier only allows free mirroring *to* GitHub, not pulls from GitHub. That requires the first paid tier. To set up your push mirroring follow these steps:
 
 1. Go to your project on GitLab. Click *Settings -> Repository*.
 2. Click to expand the *Mirroring repositories* section.
