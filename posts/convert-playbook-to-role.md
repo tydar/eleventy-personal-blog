@@ -14,7 +14,7 @@ In an earlier post, I discussed [a set of Ansible playbooks](https://github.com/
 
 I quickly realized these playbooks are a bit clunky to maintain. While I could develop some conventions for myself about where to store secrets and how to import them, relative pathing for files I need to copy, and so on, I could see a set of so-called "conventions" becoming a long list of one-off rules I'd created in the moment that I needed to make a configuration change.
 
-Brief investigation brought me to the concept of [Ansible Roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html). Ansible Roles are essentially a standard way to organize a set of Ansible configuration scripts and their dependencies for ease of reuse, understanding and patching, and sharing.
+Brief investigation brought me to the concept of [Ansible Roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html). Ansible Roles are essentially a standard way to organize a set of Ansible configuration scripts and their dependencies for ease of reuse, understanding and patching, and sharing. The final product of this process is [hosted on GitHub](https://github.com/tydar/gitlab-ansible-role).
 
 ## Basic overview
 
