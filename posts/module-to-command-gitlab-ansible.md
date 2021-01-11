@@ -38,3 +38,5 @@ Stranger still. No Ansible task that might be stomping on the rest of the config
 But the registration command gets each runner a unique token. So just copying a good configuration file is out of the question. A bit of Google searching later and I see a few Ansible roles online that invoke the `gitlab-runner register` CLI command instead of using the community module like I had been. I modify my task to do that instead.
 
 And it works! But I'm still unsure why the module is broken. I know that it is using an earlier version of the gitlab-python library, so my best guess is that the library version it is using doesn't know how to register with a more recent GitLab controller. An updated module would be nice if this is the case. But a role making use of the CLI tooling works perfectly for now.
+
+Overall this process was a good proving of the basic troubleshooting methodology: identify where it breaks, make a hypothesis, and test that hypothesis. When your hypothesis isn't quite write, test a slightly different way to identify where the problem lies.
