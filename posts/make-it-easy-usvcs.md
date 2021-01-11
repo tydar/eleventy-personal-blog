@@ -1,6 +1,6 @@
 ---
 title: "Make it easy"
-date: 2021-01-08
+date: 2021-01-11
 tags:
     - devops
     - architecture

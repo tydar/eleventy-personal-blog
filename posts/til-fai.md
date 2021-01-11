@@ -1,6 +1,6 @@
 ---
 title: "TIL: deploy Debian 10 automatically with FAI"
-date: 2021-01-08
+date: 2021-01-11
 tags:
     - linux
     - til
