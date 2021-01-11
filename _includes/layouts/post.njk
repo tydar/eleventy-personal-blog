@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
-<h4>{{ date  }}</h4>
+<h4>{{ page.date.getUTCString() }}</h4>
 
 {{ content | safe }}
 
