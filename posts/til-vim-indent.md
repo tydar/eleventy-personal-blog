@@ -1,5 +1,5 @@
 ---
-title: "TIL: VIM and indentation"
+title: "TIL: Changing indentation in Vim"
 date: 2021-01-14
 tags:
     - vim
