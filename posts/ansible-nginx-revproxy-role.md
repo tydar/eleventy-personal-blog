@@ -102,7 +102,7 @@ revprox:
 
 To execute, run the command `ansible-playbook -i inventory/test.yml test_playbook.yml`. This will install Nginx on the remote server. The `default.conf` templated to Nginx will look like this:
 
-``` yml
+``` nginx
 # default.conf
 server {
     listen 80;
