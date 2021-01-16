@@ -9,7 +9,7 @@ layout: layouts/post.njk
 ---
 ## Objective
 
-Develop a minimal Ansible role that will configure an existing Linux server to run an Nginx reverse proxy. Parameterize the Nginx configuration file based on variables passed to the role.
+Develop a minimal Ansible role that will configure an existing Linux server to run an Nginx reverse proxy. Parameterize the Nginx configuration file based on variables passed to the role. GitHub repo here: [Nginx Ansible Role](https://github.com/tydar/nginx-ansible-role).
 
 ## Short recap on role structure
 
