@@ -15,7 +15,7 @@ Develop a minimal Ansible role that will configure an existing Linux server to r
 
 The folder structure for this role is
 
-```
+``` text
 roles/
     nginx_reverse_proxy/
         tasks/
