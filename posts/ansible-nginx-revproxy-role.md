@@ -33,6 +33,7 @@ In `tasks/main.yml` we place the top-level tasks that will be run when the role 
 To create an Nginx configuration file using our Ansible variables, we'll take advantage of Ansible's builtin support for Jinja2 templates. Control expressions allow us to iteratively construct `location` blocks for each proxied path.
 
 ```
+{% raw %}
 server {
     listen {{ listen_port  }};
     server_name {{ server_name }};
@@ -47,6 +48,7 @@ server {
     }
 {% endfor %}
 }
+{% endraw %}
 ```
 
 For the minimal configuration details for a reverse proxy, we'll need to pass in a list of dictionaries called `locations`, where each dictionary entry has keys named `path` and `pass_to`. We also need to provide the listening port as well as a flag & variable to indicate whether requests for the root URI should be proxied.
