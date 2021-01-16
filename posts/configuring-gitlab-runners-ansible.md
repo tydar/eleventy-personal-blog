@@ -15,7 +15,7 @@ It seems to me like more trouble than it is worth to get a containerized libvirt
 
 Here are the details of [the first playbook](https://github.com/tydar/ansible-gitlab-scripts/blob/main/basic-deb10-setup.yml):
 
-```
+``` yml
 - name: install sudo, vim, .vimrc, add my user to sudoers, and install open-vm-tools
   remote_user: root
   hosts: all
@@ -37,7 +37,7 @@ Here are the details of [the first playbook](https://github.com/tydar/ansible-gi
 This file does a few things to make a new minimal Debian install more liveable. First, it installs sudo and adds the non-root user I create during installation to the sudoers usergroup. This uses the `ansible.builtin.apt` and `ansible.builtin.user` modules to make that configuration.
 
 From here, I install several more utilities (vim, git, etc). I've elided that to show two more Ansible modules in use.
-```
+``` yml
 . . .
       - name: pull vimrc from git
         become: yes

@@ -16,7 +16,7 @@ This documents the simple scripts I developed to enable easy initial testing of 
 
 Grab a cloud image from the Debian mirrors if we don't have it on disk already:
 
-```
+``` shell
 test -f images/debian10.qcow2 || wget -O images/debian10.qcow2 https://cloud.debian.org/images/cloud/buster/20201214-484/debian-10-generic-amd64-20201214-484.qcow2
 ```
 
@@ -24,7 +24,7 @@ test -f images/debian10.qcow2 || wget -O images/debian10.qcow2 https://cloud.deb
 
 In my current test environment script, I create 2 virtual machines, so I need two of these overlay images. Documentation found on the libvirt knowledgebase [^4].
 
-```
+``` shell
 qemu-img create -f qcow2 -F qcow2 -o backing_file=images/debian10.qcow2 test1.qcow2
 qemu-img create -f qcow2 -F qcow2 -o backing_file=images/debian10.qcow2 test2.qcow2
 ```
@@ -45,7 +45,7 @@ I opted to not include a network configuration in my scripts, since I do not nee
 
 Again, I need 2 cloud-init seed images because I am creating two virtual machines for testing. This tool is provided by the package `cloud-image-utils` (the package name may vary; I am using Debian 10).
 
-```
+``` shell
 cloud-localds -v test-seed1.img cloud-init.cfg
 cloud-localds -v test-seed2.img cloud-init.cfg
 ```
@@ -54,7 +54,7 @@ cloud-localds -v test-seed2.img cloud-init.cfg
 
 We boot from the virtual overlay harddrive using the `--boot hd` option, provide the cloud-init configuration through the `--disk path=test-seed1.img,device=cdrom` option, and avoid being tossed to an interactive console session with `--noautoconsole`. The other options are standard or discretionary depending on your context.
 
-```
+``` shell
 virt-install --name test1 \
     --memory 1000 --vcpus 1 \
     --boot hd,menu=on \

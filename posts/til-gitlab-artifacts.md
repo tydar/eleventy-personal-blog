@@ -11,7 +11,7 @@ layout: layouts/post.njk
 ---
 When you run a job in Gitlab, you can specify artifacts to preserve in your `.gitlab-ci.yml` file. Here's the simple build job for KVM Conjurer:
 
-```
+``` yml
 build-job:
   tags:
       - debian

@@ -9,7 +9,7 @@ layout: layouts/post.njk
 ---
 Configuring Nginx to act as a load balancer for one service is done easily with a simple configuration file.
 
-```
+``` nginx
 http {
     upstream service1 {
         server n1.service1.example.com;
@@ -28,7 +28,7 @@ By default, Nginx uses a round-robin load-balancing method. This means each serv
 
 Two common alternatives are a least connections and an IP Hash strategy. Least connections is activated by adding a directive to the upstream block:
 
-```
+``` nginx
 upstream service1 {
     least_conn;
     # servers go here
@@ -37,7 +37,7 @@ upstream service1 {
 
 This means the server with the least number of live connections is prioritized. Weights are again considered. IP Hash is activated similarly:
 
-```
+``` nginx
 upstream service1 {
     ip_hash;
     # servers go here

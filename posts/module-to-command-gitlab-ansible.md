@@ -14,7 +14,7 @@ My very first assumption was that something I'd done in setting up the servers w
 
 Next, I opened up `/etc/gitlab-runner/config.toml` on one of my runner boxes. The entire content was:
 
-```
+``` toml
 concurrent = 1
 check_interval = 0
 
@@ -25,7 +25,7 @@ executor = shell
 
 Strange! No [[runners]] section and the executor line standing on its own. I thought I might have had a major misunderstanding of the regex used to ensure the executor was set to shell (a hacky solution I was unhappy with). I commented out that section of my playbook and started again from scratch. This time, a `config.toml` similarly sparse:
 
-```
+``` toml
 concurrent = 1
 check_interval = 0
 

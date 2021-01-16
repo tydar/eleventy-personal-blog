@@ -20,8 +20,7 @@ Brief investigation brought me to the concept of [Ansible Roles](https://docs.an
 
 The final filesystem structure for the three roles replacing my individual configuration playbooks looks like this:
 
-```
-
+``` text
 /home/tyler/ansible-playbooks/homelab-ansible-scripts/
 |-- inventories
 |   `-- gitlab_runners.yml
@@ -66,7 +65,7 @@ The vars folder and the default vars folder are used to store files providing va
 
 In my new `debian_utils/defaults/vars.yml` I have a default user list of one and a default value of false for two vars indicating to treat the Debian machine as bare metal unless specified to be running in a particular virtualization environment.
 
-```
+``` yml
 ---
 users_list:
     - tyler
@@ -81,7 +80,7 @@ The `files/` directory is intended to hold files you may need to copy to the rem
 
 To configure a machine as a GitLab runner, this role needs to copy a file. This file is placed in `gitlab_runner/files/` and is accessed simply in that role's tasks as `pin-gitlab-runner.pref` with no pathing or prefix necessary:
 
-```
+``` yml
 - name: copy APT pinning file to ensure gitlab repo used
   copy:
     src: pin-gitlab-runner.pref
@@ -94,7 +93,7 @@ To use these new roles, we create a playbook in the root directory next to the `
 
 Here's an example playbook using my `debian_utils` role and passing in a set of users to create:
 
-```
+``` yml
 ---
 - hosts: runners
   roles:
@@ -109,7 +108,7 @@ Given an inventory with hosts in a group called "runners" this playbook will run
 
 Similarly, you can set up a fresh Debian 10 image from start to a GitLab runner capable of building KVM Conjurer by using a playbook like this:
 
-```
+``` yml
 ---
 - hosts: runners
   roles:

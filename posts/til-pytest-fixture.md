@@ -12,7 +12,8 @@ Pytest provides fixtures as a standard way to pass context to individual tests i
 To write a fixture, you decorate a python function with `@pytest.fixture`. If you place the fixture at the beginning of a given test file, you can pass that fixture as a parameter to any test in that file to provide the fixed, baseline context. To provide a fixture to all tests in your project, include it in the top-level `conftest.py` file.
 
 Here's the short fixture I wrote to provide a connection to QEMU through libvirt:
-```
+
+``` python
 @pytest.fixture
 def qemu_connection():
     conn = libvirt.open('qemu:///system')
@@ -23,7 +24,7 @@ def qemu_connection():
 
 This fixture is present in my `conftest.py` file, so I can use it in `tests/domains/test_list.py`:
 
-```
+``` python
 def test_list(client, qemu_connection):
     listByName = qemu_connection.listDefinedDomains()
     . . .

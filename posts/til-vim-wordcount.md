@@ -9,7 +9,7 @@ layout: layouts/post.njk
 ---
 To count the number of words in your current buffer in Vim, use the keystrokes `g` followed by `Ctrl-g`. You'll see something like:
 
-```
+``` text
 Col 1 of 0; Line 13 of 14; Word 57 of 58, Byte 327 of 331
 ```
 
