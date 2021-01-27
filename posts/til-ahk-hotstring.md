@@ -2,10 +2,12 @@
 title: "TIL: Use AutoHotkey hotstrings to ease recordkeeping"
 date: 2021-01-27
 tags:
-    - til
-    - helpdesk
+  - til
+  - helpdesk
+
 layout: layouts/post.njk
 ---
+
 To use AutoHotkey to ease recordkeeping on tickets, you can use the basic "hotstring" feature for frequently repeated issues. An example script:
 
 ```ahk
