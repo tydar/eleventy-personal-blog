@@ -10,7 +10,7 @@ layout: layouts/post.njk
 
 To use AutoHotkey to ease recordkeeping on tickets, you can use the basic "hotstring" feature for frequently repeated issues. An example script:
 
-```ahk
+```autohotkey
 ::/cs::Customer says
 ::/fpw::Reset password issue
 ::/rr::Reset wireless AP/router resolved cusomter issue
