@@ -5,7 +5,7 @@ templateClass: tmpl-post
 tags: about-me
 eleventyNavigation:
   key: About Me
-  order: 4
+  order: 5
 ---
 
 I am an IT professional living in the American Midwest. I'm using this blog to write about things that I'm interested in: Linux, managing infrastructure (particularly virtualized Linux systems), cloud services, CI/CD, DevOps, and notes from software projects I'm developing.
