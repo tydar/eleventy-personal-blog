@@ -13,7 +13,7 @@ I'm currently working on two major projects:
 
 1. [KVM Conjurer](https://github.com/tydar/kvm-conjurer): a web application intended for simple management of single-host KVM guests. I am developing this project both to learn more about KVM, qemu, and using libvirt to manage them and also to use as a day-to-day interface on some of my homelab machines.
 
-2. AWS Solutions Architect Associate certification: I am studying for the AWS Solutions Architect Associate certification. I have always had an interest in cloud infrastructure and am planning to develop that interest into a career in IT operations.
+2. AWS Solutions Architect Associate certification: I am studying for the AWS Solutions Architect Associate certification. I have developed an interest in the last several years in infrastructure and operations in addition to a longtime interest in software development. I'm using the AWS certification process to guide my study more rigorously.
 
 While these are my two current main projects, you'll find posts on this site about a lot of other topics. I have a homelab for learning more about lower-level virtualization, the hardware and software supporting cloud service providers, non-platform-specific configuration tools like Ansible and Terraform, and other topics.
 
