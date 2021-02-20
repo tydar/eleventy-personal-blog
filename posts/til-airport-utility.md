@@ -1,5 +1,5 @@
 ---
-title: "TIL: use AirPort Utility to measure wirless network signal"
+title: "TIL: use AirPort Utility to measure wireless network signal"
 date: 2021-01-31
 tags:
     - til
