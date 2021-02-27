@@ -8,7 +8,7 @@ layout: layouts/post.njk
 ---
 [SQLAlchemy](https://www.sqlalchemy.org/) supports native Enum types. This includes support for special Enum features in Postgres and MySQL. To define a basic Enum column, you need code like this snippet from my [Conjurer](https://gitlab.com/tyler.a.darnell/libvirt-conjurer) project:
 
-'''python
+```python
 class StateType(enum.Enum):
     """
     VM lifecycle states
@@ -28,6 +28,6 @@ class Domain(db.Model):
     os = db.Column(db.String(128))
     name = db.Column(db.String(128), nullable=False)
     state = db.Column(db.Enum(StateType), nullable=False)
-'''
+```
 
 First, you define a python Enum. Then, you use that Enum as a base for the SQLAlchemy enum type.
