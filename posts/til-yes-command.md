@@ -35,3 +35,5 @@ test-job:
         - yes 'yes' | poetry cache clear --all pypi
     . . .
 ```
+
+Now the command runs successfully in the Gitlab CI pipeline!
