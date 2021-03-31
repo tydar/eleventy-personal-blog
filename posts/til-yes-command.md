@@ -1,6 +1,6 @@
 ---
 title: "TIL: Use yes to provide input to terminal programs"
-date: 2021-01-27
+date: 2021-03-31
 tags:
   - til
   - linux
