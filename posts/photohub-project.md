@@ -1,5 +1,5 @@
 ---
-title: "Photohub Project Write-up"
+title: "Big Picture photo gallery"
 date: 2021-08-03
 tags:
   - python
