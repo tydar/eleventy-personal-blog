@@ -27,4 +27,4 @@ Once I ran the command, Vim's search highlighting remained at the beginning of e
 
 Today, I still had editing to do, so I finally looked it up and learned this command!
 
-[0](https://stackoverflow.com/questions/4372660/get-rid-of-vims-highlight-after-searching-text)
+0:[https://stackoverflow.com/questions/4372660/get-rid-of-vims-highlight-after-searching-text](https://stackoverflow.com/questions/4372660/get-rid-of-vims-highlight-after-searching-text)
