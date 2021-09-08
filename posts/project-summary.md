@@ -4,9 +4,6 @@ date: 2021-02-09
 tags:
     - projects
 layout: layouts/post.njk
-eleventyNavigation:
-    key: Projects
-    order: 2
 ---
 
 I'm currently working on two major projects:
