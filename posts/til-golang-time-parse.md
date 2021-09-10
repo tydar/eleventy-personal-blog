@@ -28,6 +28,18 @@ const (
 
 Many additional layouts are provided, as well as instructions for creating your own layout string, at the [`time` module documentation](https://pkg.go.dev/time#pkg-constants).
 
+This allows for straightforward parsing and manipulation of times and dates:
+
+```go
+time, err := time.Parse(time.Stamp, timestampString)
+
+if err != nil {
+    panic(err)
+}
+
+fmt.Println(time.Format(time.RFC822))
+```
+
 `value` is just the string to be parsed. It should contain only the actual time/date string. If the string contains any text that does not match the specified format, you will receive an "extra text" error:
 
 ```log
