@@ -1,6 +1,6 @@
 ---
 title: "TIL: Parsing dates and times in Go with time.Parse(...)"
-date: 2021-09-08
+date: 2021-09-10
 tags:
   - til
   - golang
