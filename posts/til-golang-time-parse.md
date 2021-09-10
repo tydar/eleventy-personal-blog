@@ -1,5 +1,5 @@
 ---
-title: "TIL: Using time.Parse() to parse times and dates stored as strings"
+title: "TIL: Parsing dates and times in Go with time.Parse(...)"
 date: 2021-09-08
 tags:
   - til
@@ -34,5 +34,5 @@ Many additional layouts are provided, as well as instructions for creating your 
 panic: parsing time "Sep  5 13:32:02 dnsmasq[8211]: query[AAAA] crawl.akrasiac.org from <INTERNAL IP>": extra text: " dnsmasq[8211]: query[AAAA] crawl.akrasiac.org from <INTERNAL IP>" 
 ```
 
-The result of a properly formed call to `time.Parse(...)` with an appropriate `layout` and `value` is a Go time object. By default, unless your string includes time zone information, the time zone for the new time is UTC. `time.ParseInLocation(...)` provides the ability to define a time zone by providing a `Location` parameter.
+The result of a properly formed call to `time.Parse(...)` with an appropriate `layout` and `value` is a Go time object. By default, unless your string includes time zone information, the time zone for the new time is UTC. `time.ParseInLocation(...)` provides the ability to define a time zone by providing a `Location` parameter, such as one returned by `time.FixedZone(...)` or `time.LoadLocation(...)`.
 
