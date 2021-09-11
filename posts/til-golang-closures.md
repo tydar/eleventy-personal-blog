@@ -49,7 +49,7 @@ filtered := filterLogLine(logLines, func(ll logLine) bool {
 })
 ```
 
-Using a anonymous function also enabled writing this helper function for searching the full text of a log line:
+Using an anonymous function also enabled writing this helper for searching the full text of a log line:
 
 ```go
 func textSearchLogLine(line logLine, s string) filterFunc {
@@ -61,7 +61,7 @@ func textSearchLogLine(line logLine, s string) filterFunc {
 }
 ```
 
-Generally the syntax for a anonymous function in Go is:
+Generally the syntax for an anonymous function in Go is:
 
 ```go
 func (argument argType) returnType {
