@@ -1,5 +1,5 @@
 ---
-title: "TIL: Using closures and functions as arguments in Go"
+title: "TIL: Using anonymous functions in Go"
 date: 2021-09-11
 tags:
   - til
@@ -7,7 +7,7 @@ tags:
 
 layout: layouts/post.njk
 ---
-In my current Go project, I often need to filter a slice of `struct`s based on the value of some field. Writing a unique filter function or simply rewriting the logic in place was tedious. Using closures, a more generic filter function can be created.
+In my current Go project, I often need to filter a slice of `struct`s based on the value of some field. Writing a unique filter function or simply rewriting the logic in place was tedious. Using anonymous functions, a more generic filter function can be created.
 
 My `struct` type is:
 
@@ -49,7 +49,7 @@ filtered := filterLogLine(logLines, func(ll logLine) bool {
 })
 ```
 
-Using a closure also enabled writing this helper function for searching the full text of a log line:
+Using a anonymous function also enabled writing this helper function for searching the full text of a log line:
 
 ```go
 func textSearchLogLine(line logLine, s string) filterFunc {
@@ -61,7 +61,7 @@ func textSearchLogLine(line logLine, s string) filterFunc {
 }
 ```
 
-Generally the syntax for a closure in Go is:
+Generally the syntax for a anonymous function in Go is:
 
 ```go
 func (argument argType) returnType {
