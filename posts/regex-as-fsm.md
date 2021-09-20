@@ -8,7 +8,7 @@ tags:
 
 layout: layouts/post.njk
 ---
-Today and yesterday I have been toying with a [simple finite state machine](https://github.com/tydar/gone-fsm) implementation I wrote in go.
+Today and yesterday I have been toying with a [simple finite state machine](https://github.com/tydar/gone-fsm) implementation I wrote in Go.
 
 One common use of finite state machines is for the computation of regular expressions. A parser is a bit out of scope for messing with my simple library (though I am interested in trying that out later).
 
