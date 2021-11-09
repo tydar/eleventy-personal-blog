@@ -29,7 +29,7 @@ func main() {
 
 `requestWorker(i)` sends a high number of requests to the server with each request body including the `id` passed as a parameter. Here it is the index variable from the loop. However, every request body was sent with an `id` equal to 10!
 
-According to [this discussion from Stack overflow](https://stackoverflow.com/questions/10116507/go-transfer-var-into-anonymous-function), this happens because in my initial code Go the `i` variable is the index variable from the loop, and is being passed by reference because the anonymous function creates a closure.
+According to [this discussion from Stack overflow](https://stackoverflow.com/questions/10116507/go-transfer-var-into-anonymous-function), this happens because in my initial code the `i` variable is only the index variable from the loop, and is being passed by reference because the anonymous function creates a closure.
 
 Passing it as a parameter to the anonymous function instead allocates a new instance for that function call. I had to modify the code to instead say:
 
