@@ -1,6 +1,6 @@
 ---
 title: "TIL: Go bufio.Scanner only discards a single trailing newline"
-date: 2021-11-10-2021
+date: 2021-11-10
 tags:
     - til
     - golang
