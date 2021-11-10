@@ -10,9 +10,8 @@ When using a [bufio.Scanner](https://pkg.go.dev/bufio#Scanner) to iterate over a
 
 This squares with the documentation for the `ScanLines` function linked above, which says:
 
-```
-The end-of-line marker is one optional carriage return followed by one mandatory newline. In regular expression notation, it is `\r?\n`.
-```
+
+> The end-of-line marker is one optional carriage return followed by one mandatory newline. In regular expression notation, it is `\r?\n`.
 
 For example, the following code:
 
