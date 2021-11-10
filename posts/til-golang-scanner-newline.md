@@ -30,7 +30,8 @@ func main() {
     scanner := bufio.NewScanner(r)
     output := 1
     for scanner.Scan() {
-        fmt.Printf("Line %d: %s\n", output, scanner.Text())
+        line := scanner.Text()
+        fmt.Printf("Line %d of length %d: %s\n", output, len(line), line)
         output++
     }
 }
@@ -39,8 +40,8 @@ func main() {
 Produces the following output:
 
 ```
-Line 1: Line 1
-Line 2: Line 2
-Line 3:
-Line 4: Line 3
+Line 1 of length 6: Line 1
+Line 2 of length 6: Line 2
+Line 3 of length 0:
+Line 4 of length 6: Line 3
 ```
