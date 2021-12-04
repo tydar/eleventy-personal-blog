@@ -1,6 +1,6 @@
 ---
 title: "TIL: ActiveRecord hash conditions and string conditions"
-date: 2021-12-3
+date: 2021-12-03
 tags:
     - til
     - ruby
