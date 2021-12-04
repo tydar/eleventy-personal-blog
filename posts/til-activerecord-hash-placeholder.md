@@ -19,8 +19,7 @@ You can also use hash conditions when joining:
 Person.joins(:orders).where(orders: { pending: true })
 ```
 
-But you cannot use hash conditions to create queries based on SQL keywords like `LIKE`. Instead you must use
-string conditions and placeholders like this Postgres example:
+But you cannot use hash conditions to create queries based on SQL keywords like `LIKE`. Instead you must use string conditions and placeholders like this Postgres example:
 
 ```ruby
 Person.where("email LIKE ?", "%gmail.com")
