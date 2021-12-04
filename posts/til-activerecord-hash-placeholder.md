@@ -1,5 +1,5 @@
 ---
-title: "TIL: ActiveRecord hash conditions and string conditions"
+title: "TIL: ActiveRecord hash conditions and parameterized conditions"
 date: 2021-12-03
 tags:
     - til
@@ -25,3 +25,11 @@ string conditions and placeholders like this Postgres example:
 ```ruby
 Person.where("email LIKE ?", "%gmail.com")
 ```
+
+Parameterized queries like this allow SQL injection mitigations to be applied by ActiveRecord where
+
+```ruby
+Person.where("email LIKE %#{INPUT}")
+```
+
+would be unsafe!

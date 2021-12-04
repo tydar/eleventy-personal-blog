@@ -7,8 +7,6 @@ eleventyNavigation:
 
 <h1>I'm Tyler</h1>
 
-<p>Have a look around. I write about tips and tricks I learn day-to-day at <a href="til">TIL</a> and about more in-depth topics like <a href="/posts/convert-playbook-to-role">my Ansible roles write-up</a> about making the switch from Ansible playbooks to roles to manage the CI infrastructure for one of my own projects.
-
 {% set maxPosts = collections.posts.length | min(5) %}
 <h2>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
 
