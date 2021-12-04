@@ -7,9 +7,9 @@ tags:
 
 layout: layouts/post.njk
 ---
-The Go module `bufio` provides a struct and methods `Scanner` that allow for easy iteration over input from an `io.Reader`.
+The Go module [`bufio`](https://pkg.go.dev/bufio) provides a struct and methods `Scanner` that allow for easy iteration over input from an `io.Reader`.
 
-Built in functions of type `type SplitFunc func(data []byte, atEOF bool) (advance int, token []byte, err error)` include those that allow tokenizing on words, lines, runes, and bytes. You can also write your own `SplitFunc` and pass it as an argument to a scanner instance with `scanner.Split(split SplitFunc)`.
+Built in functions of type `type SplitFunc func(data []byte, atEOF bool) (advance int, token []byte, err error)` include those that allow tokenizing on words, lines, runes, and bytes. You can also write your own `SplitFunc` and pass it as an argument to a scanner instance with `scanner.Split(split SplitFunc)` to tokenize on another condition.
 
 For example, in a current project to implement a [STOMP messaging protocol server](https://stomp.github.io/stomp-specification-1.2.html) I need to tokenize input based on null bytes, so I wrote this `SplitFunc`:
 
@@ -32,3 +32,5 @@ func ScanNullTerm(data []byte, atEOF bool) (int, []byte, error) {
 	return 0, nil, nil
 }
 ```
+
+Which turns `Alpha^@Beta^@Gamma\nDelta\Theta` into the tokens `Alpha`, `Beta`, and `Gamma\nDelta\nTheta`.
