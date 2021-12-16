@@ -1,6 +1,6 @@
 ---
 title: "TIL: Managing configuration with Viper in Go"
-date: 2021-12-13
+date: 2021-12-15
 tags:
   - til
   - golang
