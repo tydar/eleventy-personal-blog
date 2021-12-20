@@ -7,9 +7,6 @@ tags:
 
 layout: layouts/post.njk
 ---
-
-# Lessons from writing Stomper
-
 [Stomper](https://github.com/tydar/stomper) is my Go message broker project implementing the [Simple Text Oriented Messaging Protocol (STOMP)](https://stomp.github.io/). It's not *quite* fully compliant yet, but here are a few things I learned writing it.
 
 1) Channels and goroutines are extremely powerful and intuitive.
@@ -41,4 +38,5 @@ In many projects I've taken on over time, I have defined the spec as I've gone. 
 On the other hand, writing to spec is a little intimidating--there's an exact standard and the language is not always exactly smooth. I appreciated choosing a _small_ spec to implement. The set of total required features is not so large to be overwhelming and the absolute pagecount to comb through is small.
 
 I'm very excited to finish up writing to the spec and implement one or two "nice to have" features for my project. Finally I'll say it again: I love static typing! Compile-time errors are much clearer and runtime errors have a narrower list of possible causes and I just write the right code the first time more often.
+
 
