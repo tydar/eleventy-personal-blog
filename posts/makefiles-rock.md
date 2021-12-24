@@ -12,7 +12,7 @@ but `make` makes it *really* easy to keep some versioned commands and hints arou
 certain behavior from the server. That is most easily done with a `docker run` command with several `-e` flags. But now
 I can just `make run-server` and voila. And all it took was this:
 
-```make
+```makefile
 run-server:
 	docker run -d -p 32801:32801 \
 		-e STOMPER_HOSTNAME=0.0.0.0 \
@@ -25,7 +25,7 @@ Similarly, I've been learning some MongoDB basics for a project at work and I cr
 pulls content from a local mongo instance. Here's the Makefile I use to make sure I never have to fumble when I take a spare
 minute to work on the project:
 
-```make
+```makefile
 run-mongo:
 	docker run -d -p 27017:27017 --name mongo_test mongo:latest
 
