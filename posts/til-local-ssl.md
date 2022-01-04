@@ -60,6 +60,7 @@ Most of the flags on this command are straighforward as well. Two that stood out
 > *-req*
 >
 > > By default a certificate is expected on input. With this option a certificate request is expected instead.
+
 > ...
 > *-CAcreateserial*
 >
@@ -100,3 +101,4 @@ $ openssl rsa -in app_pk.pem -out app_pk.unenc.pem -passin <...>
 ```
 
 Updating the name of the private key file in my test program got me a result! Go does provide the tools to [use an encrypted key directly](https://stackoverflow.com/a/56131169) as well--a much better method to use in general.
+
