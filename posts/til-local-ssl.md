@@ -1,6 +1,6 @@
 ---
 title: "TIL: Self-signed SSL for lab environment"
-date: 2021-01-04
+date: 2022-01-04
 tags:
   - til
   - ssl
