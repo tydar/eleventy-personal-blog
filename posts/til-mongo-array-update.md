@@ -16,8 +16,7 @@ In [mdbssg](https://github.com/tydar/mdbssg) my small static site generator proj
 	"_id": ObjectID("..."),
 	"username"": "...",
 	"sessions": [
-		"token": "...",
-		"expires_at": "...",
+		{"token": "...", "expires_at": "..."}, ...
 	],
 }
 ```
@@ -81,3 +80,4 @@ db.users.updateMany(
 ```
 
 I'm not sure which is more efficient to use--but I think `$pull` and `$push` produce clearer, more idiomatic Mongo queries.
+
