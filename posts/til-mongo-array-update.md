@@ -80,4 +80,4 @@ db.users.updateMany(
 )
 ```
 
-I'm not sure which is more efficient to use--but 
+I'm not sure which is more efficient to use--but I think `$pull` and `$push` produce clearer, more idiomatic Mongo queries.
