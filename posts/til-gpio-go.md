@@ -1,6 +1,6 @@
 ---
 title: "TIL: Interact with GPIO on Raspberry Pi with Go"
-date: 2022-01-04
+date: 2022-01-05
 tags:
   - til
   - pi
