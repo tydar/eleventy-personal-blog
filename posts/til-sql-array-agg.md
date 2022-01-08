@@ -12,6 +12,7 @@ Recently working on a reporting query in [Stripe Sigma](https://stripe.com/sigma
 
 I learned about the aggregate function `ARRAY_AGG`, which turns a set of values into an array of values. It is supported by Postgres and by [Trino](https://trino.io/), the query engine used by Stripe Sigma.
 
+```
 Here's an example table:
 
 | id | fk_id | content |
@@ -19,6 +20,7 @@ Here's an example table:
 | 1  | 100 | row 1     |
 | 2  | 100 | row 2     |
 | 3  | 200 | row 3     |
+```
 
 And a query:
 
@@ -33,7 +35,10 @@ group by fk_id
 
 And a result:
 
+```
+
 | fk_id | content_array      |
 -----------------------------
 | 100   | ["row 1", "row 2"] |
 | 200   | ["row 3"]          |
+```
