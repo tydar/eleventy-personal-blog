@@ -16,7 +16,7 @@ I recently deployed my projects [recipe randomizer](https://github.com/tydar/rec
 
 Since I was already familiar with building Go apps in Docker, I decided to take that route. That means writing a Dockerfile like this:
 
-```Dockerfile
+```docker
 ##
 ## BUILD
 ## 
