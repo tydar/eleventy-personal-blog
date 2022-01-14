@@ -1,5 +1,5 @@
 ---
-title: "TIL: Notes on using a MongoDB Atlas free shared instance for development"
+title: "TIL: Stopping a Heroku build"
 date: 2022-01-14
 tags:
   - til
