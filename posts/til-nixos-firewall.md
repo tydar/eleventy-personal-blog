@@ -1,5 +1,5 @@
 ---
-title: "TIL: Parsing dates and times in Go with time.Parse(...)"
+title: "TIL: Open a port in the NixOS firewall"
 date: 2022-02-19
 tags:
   - til
